@@ -11,7 +11,8 @@ fun validate(aList: List<Int>,bList: List<Int>){
     var flag = false
     var cnt = 0
     for (i in aList.indices){
-        if (aList[i] == firstB){
+        val remainIsize = aList.size - i
+        if (aList[i] == firstB && remainIsize >= bList){
             
             for (j in bList){
                 if (j == aList[i+cnt]){
