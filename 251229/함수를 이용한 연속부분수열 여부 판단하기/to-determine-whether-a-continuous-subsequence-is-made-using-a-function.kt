@@ -23,8 +23,13 @@ fun validate(aList: List<Int>,bList: List<Int>){
                 }
             }          
         }
+        if (cnt == bList.size){
+            flag = true
+        }
     }
-    if (cnt == bList.size){
+
+
+    if (flag){
         print("Yes")
     }else {
         print("No")
