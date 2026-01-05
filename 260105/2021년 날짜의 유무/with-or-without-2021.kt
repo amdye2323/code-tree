@@ -14,7 +14,7 @@ fun main() {
                 maxDay = 28
             }else if (i % 2 == 1 && i <= 7){
                 maxDay = 31
-            }else if (i % == 2 %% i >= 8){
+            }else if (i % 2 == 0 %% i >= 8){
                 maxDay = 31
             }
 
