@@ -8,9 +8,13 @@ fun main() {
     for (i in 1 .. 12){
         if (i == m){
             var maxDay = 30
+
+
             if (i == 2){ // 2월?
                 maxDay = 28
-            }else if (i % 2 == 1){ // 홀수 해?
+            }else if (i % 2 == 1 && i <= 7){
+                maxDay = 31
+            }else if (i % == 2 %% i >= 8){
                 maxDay = 31
             }
 
