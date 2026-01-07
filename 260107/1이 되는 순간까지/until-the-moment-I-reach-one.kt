@@ -2,13 +2,13 @@ fun main() {
     val n = readLine()!!.toInt()
     // Please write your code here.
     val resul = fact(n)
-    print(resul)
+    print(count)
 }
 var count = 0
 
-fun fact(num: Int): Int{
+fun fact(num: Int){
     if (num == 1){
-        return num
+        return
     }
 
     if (num % 2 == 0){
@@ -17,5 +17,4 @@ fun fact(num: Int): Int{
         fact(num/3)
     }
     count ++
-    return count
 }
